@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e7P-eQ-oHw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Film View Controller-->
+        <scene sceneID="pFM-GA-tWe">
+            <objects>
+                <viewController storyboardIdentifier="FilmViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e7P-eQ-oHw" customClass="FilmViewController" customModule="Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="90z-A6-MgU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f0W-gk-Q3l">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6YJ-ae-QG5" customClass="FilmTableViewCell" customModule="Film" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6YJ-ae-QG5" id="VbP-RJ-YM8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="f0W-gk-Q3l" secondAttribute="bottom" id="T0v-Oy-b9m"/>
+                            <constraint firstItem="f0W-gk-Q3l" firstAttribute="top" secondItem="90z-A6-MgU" secondAttribute="top" id="c5x-PM-qtU"/>
+                            <constraint firstItem="f0W-gk-Q3l" firstAttribute="leading" secondItem="Mh2-Wu-ZVP" secondAttribute="leading" id="gVu-LG-bSM"/>
+                            <constraint firstItem="f0W-gk-Q3l" firstAttribute="trailing" secondItem="Mh2-Wu-ZVP" secondAttribute="trailing" id="n0J-PT-2lw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mh2-Wu-ZVP"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="f0W-gk-Q3l" id="JPv-8s-Gh8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBU-Eq-Zng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-462.31884057971018" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>

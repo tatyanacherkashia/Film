@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FilmTableViewCell" id="iN0-l3-epB" customClass="FilmTableViewCell" customModule="Film" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.087" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v6-8M-6uN">
+                    <rect key="frame" x="349" y="14" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6ob-4d-53o"/>
+                        <constraint firstAttribute="height" constant="21" id="P1M-vY-LX3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ефефефе" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edX-97-YeQ">
+                    <rect key="frame" x="20" y="63" width="311" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="c24-ZK-2Xz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зеленая миля" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nay-6k-KL2">
+                    <rect key="frame" x="20" y="10" width="311" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="CG2-Rg-fnr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1v6-8M-6uN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="3vC-jr-Opk"/>
+                <constraint firstItem="edX-97-YeQ" firstAttribute="top" secondItem="nay-6k-KL2" secondAttribute="bottom" constant="10" id="5fn-tM-iEV"/>
+                <constraint firstItem="1v6-8M-6uN" firstAttribute="leading" secondItem="nay-6k-KL2" secondAttribute="trailing" constant="18" id="7qd-1g-beI"/>
+                <constraint firstItem="nay-6k-KL2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Flm-Ig-QO5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1v6-8M-6uN" secondAttribute="trailing" constant="20" id="IgK-eV-kz2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="edX-97-YeQ" secondAttribute="trailing" constant="88" id="KHu-eU-ygT"/>
+                <constraint firstItem="nay-6k-KL2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="LP4-EM-FYl"/>
+                <constraint firstItem="edX-97-YeQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eZd-uQ-kU1"/>
+                <constraint firstAttribute="bottom" secondItem="edX-97-YeQ" secondAttribute="bottom" constant="10" id="wwC-I6-sul"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="filmDescription" destination="edX-97-YeQ" id="H24-KO-RBR"/>
+                <outlet property="filmName" destination="nay-6k-KL2" id="qQs-V5-nQK"/>
+                <outlet property="rate" destination="1v6-8M-6uN" id="zH1-D5-F3q"/>
+            </connections>
+            <point key="canvasLocation" x="125.36231884057972" y="177.45535714285714"/>
+        </view>
+    </objects>
+</document>
